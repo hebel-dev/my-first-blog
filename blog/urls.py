@@ -5,6 +5,6 @@ from . import views
 
 ### first URL pattern
 
-URLPattern = [
+urlpatterns = [
     path('', views.post_list, name = 'post_list')
 ]
