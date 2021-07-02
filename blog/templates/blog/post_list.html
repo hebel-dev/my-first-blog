@@ -8,15 +8,12 @@
             <h1><a href="/">Django Girls Blog</a></h1>
         </header>
         
-        <article>
-            <time>published: 14.06.21014 12:14</time>
-            <h2><a href="">My first post</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis diam eu mauris tincidunt condimentum id et lectus.</p>
-        </article>
-        <article>
-            <time>published: 14.06.2014 12:14</time>
-            <h2><a href="">My second post</a></h2>
-            <p>Nunc luctus lectus eget elementum ullamcorper. Vivamus placerat congue libero, ac commodo magna.</p>
-        </article>
+        {% for post in posts %}
+            <article>
+                <time>published: {{ post.published_date }}</time>    
+                <h2><a href="">{{ post.title}}</a></h2>
+                <p>{{ post.text|linebreaksbr}}</p>
+            </article>
+        {% endfor %}
     </body>
 </html>
