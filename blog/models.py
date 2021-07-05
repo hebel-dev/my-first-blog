@@ -6,7 +6,7 @@ from django.utils import timezone
 
 # Create your models here.
 
-class Post(models.Model): ### Post is a Django Model so Django knows that it shhod be saved in the database
+class Post(models.Model): ### Post is a Django Model so Django knows that it shod be saved in the database
     ### properties
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
