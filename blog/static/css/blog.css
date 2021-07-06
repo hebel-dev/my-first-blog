@@ -28,10 +28,16 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    color: #828282;
+    color: #860909;
+    float: right;
+    padding-left: 15px;
 }
 
+
 .save {
+    float: right;
+}
+.btn-default {
     float: right;
 }
 
@@ -53,3 +59,4 @@ h1, h2, h3, h4 {
 .post h2 a, .post h1 a:visited {
     color: #000000;
 }
+
